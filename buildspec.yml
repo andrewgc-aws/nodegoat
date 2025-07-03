@@ -1,0 +1,16 @@
+version: 0.2
+
+env:
+  secrets-manager:
+     SRCCLR_API_TOKEN: "veracode:SRCCLR_API_TOKEN"
+phases:
+  build:
+    commands:
+      - curl -sSL https://download.sourceclear.com/ci.sh | sh >> Veracode-SCA-Results-Build-ID-$CODEBUILD_BUILD_NUMBER-DATE-$(date +%Y-%m-%d).txt
+      - cat Veracode-SCA-Results-Build-ID-$CODEBUILD_BUILD_NUMBER-DATE-$(date +%Y-%m-%d).txt
+  post_build:
+    commands:
+       - ls -la
+artifacts:
+  files:
+    - Veracode-SCA-Results-Build-ID-$CODEBUILD_BUILD_NUMBER-DATE-$(date +%Y-%m-%d).txt
