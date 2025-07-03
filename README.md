@@ -1,4 +1,4 @@
-# NodeGoat.  2-24-25
+# NodeGoat.  7-2-25 commit in github build in aws
 
 Being lightweight, fast, and scalable, Node.js is becoming a widely adopted platform for developing web applications. This project provides an environment to learn how OWASP Top 10 security risks apply to web applications developed using Node.js and how to effectively address them.
 
