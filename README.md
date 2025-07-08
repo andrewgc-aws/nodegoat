@@ -1,4 +1,4 @@
-# NodeGoat.  aws code build 7-8-25 7-8-25
+# NodeGoat.  aws code build 7-8-25 7-8-25 testing PR and merge
 
 Being lightweight, fast, and scalable, Node.js is becoming a widely adopted platform for developing web applications. This project provides an environment to learn how OWASP Top 10 security risks apply to web applications developed using Node.js and how to effectively address them.
 
